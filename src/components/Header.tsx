@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Ball } from 'lucide-react';
+import { Football } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
@@ -10,9 +10,25 @@ const Header: React.FC = () => {
       <div className="absolute top-0 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl -translate-y-1/4 translate-x-1/4"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-united/10 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4"></div>
       
+      {/* Cristiano Ronaldo images as background */}
+      <div className="absolute top-10 -right-20 w-80 h-80 opacity-20 z-0 pointer-events-none">
+        <img 
+          src="https://source.unsplash.com/random/600x800?ronaldo,realmadrid" 
+          alt="Cristiano Ronaldo Real Madrid" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="absolute bottom-10 -left-20 w-80 h-80 opacity-20 z-0 pointer-events-none">
+        <img 
+          src="https://source.unsplash.com/random/600x800?ronaldo,manchesterunited" 
+          alt="Cristiano Ronaldo Manchester United" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      
       {/* Rolling football animation */}
       <div className="absolute top-1/3 w-full h-20 overflow-hidden pointer-events-none">
-        <Ball className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
+        <Football className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
       </div>
       
       {/* Main content */}
@@ -34,7 +50,7 @@ const Header: React.FC = () => {
         
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '900ms' }}>
           <button className="button-primary flex items-center gap-2">
-            <Ball className="w-5 h-5 animate-spin-slow" />
+            <Football className="w-5 h-5 animate-spin-slow" />
             <span>Leave a Wish</span>
           </button>
           <button className="px-6 py-3 bg-transparent border-2 border-united text-united rounded-full font-semibold transform transition-all duration-200 hover:scale-105 hover:bg-united/10 active:scale-95">
