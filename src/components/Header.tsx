@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SoccerBall } from 'lucide-react';
+import { Ball } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       
       {/* Rolling football animation */}
       <div className="absolute top-1/3 w-full h-20 overflow-hidden pointer-events-none">
-        <SoccerBall className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
+        <Ball className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
       </div>
       
       {/* Main content */}
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '900ms' }}>
           <button className="button-primary flex items-center gap-2">
-            <SoccerBall className="w-5 h-5 animate-spin-slow" />
+            <Ball className="w-5 h-5 animate-spin-slow" />
             <span>Leave a Wish</span>
           </button>
           <button className="px-6 py-3 bg-transparent border-2 border-united text-united rounded-full font-semibold transform transition-all duration-200 hover:scale-105 hover:bg-united/10 active:scale-95">
