@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { Football } from 'lucide-react';
+import { Volleyball } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
     <header className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden px-4">
-      {/* Background with subtle football-theme */}
+      {/* Background with subtle volleyball-theme */}
       <div className="absolute inset-0 bg-gradient-to-b from-united/10 to-background z-0"></div>
       <div className="absolute top-0 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl -translate-y-1/4 translate-x-1/4"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-united/10 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4"></div>
@@ -26,9 +26,9 @@ const Header: React.FC = () => {
         />
       </div>
       
-      {/* Rolling football animation */}
+      {/* Rolling volleyball animation */}
       <div className="absolute top-1/3 w-full h-20 overflow-hidden pointer-events-none">
-        <Football className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
+        <Volleyball className="absolute text-black/60 w-16 h-16 animate-ball-roll" />
       </div>
       
       {/* Main content */}
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '900ms' }}>
           <button className="button-primary flex items-center gap-2">
-            <Football className="w-5 h-5 animate-spin-slow" />
+            <Volleyball className="w-5 h-5 animate-spin-slow" />
             <span>Leave a Wish</span>
           </button>
           <button className="px-6 py-3 bg-transparent border-2 border-united text-united rounded-full font-semibold transform transition-all duration-200 hover:scale-105 hover:bg-united/10 active:scale-95">
